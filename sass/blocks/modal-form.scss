@@ -1,0 +1,55 @@
+.modal-form {
+  margin: 100px auto;
+  padding: 43px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 335px;
+  text-align: center;
+  background-color: #ffffff;
+  opacity: 1;
+  border: 1px solid $dark-shadow;
+  box-shadow: 0 5px 10px rgba(0,0,1,0.25);
+  z-index: 11;
+}
+
+.modal-form__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-form__field {
+  border: none;
+}
+
+.modal-form__field legend {
+  color: $dark-gray;
+  margin: auto;
+}
+
+.modal-form__item-size span {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 32px;
+  border: 2px solid $shadow;
+}
+
+.modal-form__item-size input {
+  display: none;
+}
+
+.modal-form__item-size input:checked + span {
+  border-color: $light-green;
+}
+
+.modal-form__btn {
+  margin-top: 35px;
+}
+
+@media #{$tablet-width} {
+
+  .modal-form {
+  width: 570px;
+  }
+}

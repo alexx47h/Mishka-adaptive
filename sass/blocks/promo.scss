@@ -1,0 +1,174 @@
+.promo {
+  @include container-fluid;
+  border: 1px solid $shadow;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+.promo:hover {
+  box-shadow: 0 6px 10px $shadow;
+}
+
+.promo:active {
+  box-shadow: 0 3px 5px $shadow;
+}
+
+.promo__title {
+  margin-left: 30px;
+  font-size: 17px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-right: 25px;
+    background-image: url("../img/icon-video.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+}
+
+.promo__video {
+  position: relative;
+  width: 258px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.promo__video img {
+  width: 100%;
+}
+
+.promo__video::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 102px;
+  height: 78px;
+  background-image: url("../img/icon-play.svg");
+  background-size: 102px 78px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+.promo__video:hover::before {
+  transform: scale(1.2);
+}
+
+.promo__video:active::before {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.promo__desc {
+  margin: 30px;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  color: $dark-gray;
+}
+
+.promo__btn {
+  margin: 0 auto;
+  width: 200px;
+}
+
+@media #{$tablet-width} {
+
+  .promo {
+    padding: 0;
+    padding-bottom: 45px;
+    position: relative;
+    margin-bottom: 60px;
+  }
+
+  .promo__title {
+    margin-top: 490px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      float: none;
+      height: 32px;
+      vertical-align: middle;
+    }
+  }
+
+  .promo__desc {
+    width: 584px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .promo__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .promo__video img {
+    width: 668px;
+    height: auto;
+  }
+
+  .promo__video::before {
+    top: 43%;
+    left: 43%;
+  }
+
+  .promo__btn {
+    width: 584px;
+  }
+
+}
+
+@media #{$desktop-width} {
+
+  .promo {
+    padding-bottom: 63px;
+    margin-bottom: 105px;
+  }
+
+  .promo__video {
+    width: 683px;
+  }
+
+  .promo__video img {
+    width: 683px;
+    height: auto;
+  }
+
+  .promo__title {
+    width: 225px;
+    margin: 40px 40px 35px auto;
+
+    &::before {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .promo__desc {
+    width: 225px;
+    margin: 0 40px 46px auto;
+  }
+
+  .promo__btn {
+    width: 230px;
+    margin-right: 40px;
+  }
+}

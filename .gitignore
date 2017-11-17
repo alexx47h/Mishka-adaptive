@@ -1,0 +1,8 @@
+build/
+css/
+node_modules/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log

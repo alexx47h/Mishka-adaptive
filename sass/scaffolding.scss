@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+img, picture {
+  max-width: 100%;
+  height: auto;
+}
+
+.vusually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.container-fluid {
+  @include container-fluid;
+}

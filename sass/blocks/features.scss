@@ -1,0 +1,132 @@
+.features {
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 33px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+  }
+}
+
+.features__title {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  @include clear-list;
+}
+
+.features__item {
+  padding-bottom: 27px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.features__item svg {
+  display: block;
+  fill: $light-green;
+  width: 47px;
+  height: 38px;
+  margin-bottom: 17px;
+}
+
+@media #{$tablet-width} {
+
+  .features {
+    margin-bottom: 30px;
+  }
+
+  .features::before {
+    height: 15px;
+    background-size: auto 15px;
+  }
+
+  .features__title {
+    margin-top: 48px;
+    margin-bottom: 41px;
+    font-size: 43px;
+    line-height: 60px;
+  }
+
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .features__item {
+    margin: 0;
+    box-sizing: border-box;
+    width: 332px;
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 55px;
+  }
+
+  .features__item--eco {
+    order: 1;
+    padding-right: 30px;
+  }
+  .features__item--scandic {
+    order: 3;
+    padding-right: 30px;
+  }
+  .features__item--like {
+    order: 5;
+    padding-right: 30px;
+  }
+  .features__item--hand {
+    order: 2;
+  }
+  .features__item--support {
+    order: 4;
+  }
+  .features__item--gift {
+    order: 6;
+  }
+}
+
+@media #{$desktop-width} {
+
+  .features {
+    margin-top: 72px;
+  }
+
+  .features::before {
+    height: 25px;
+    background-size: auto 25px;
+  }
+
+  .features__title {
+    margin-top: 60px;
+    margin-bottom: 48px;
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .features__list {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .features__item {
+    width: 350px;
+  }
+
+}

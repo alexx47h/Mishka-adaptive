@@ -1,0 +1,143 @@
+.footer-bottom {
+  background-color: $bg-color;
+  margin-top: 40px;
+}
+
+.footer-bottom__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bottom__logo {
+  display: none;
+}
+
+.footer-bottom__social {
+  display: block;
+  width: 100%;
+  padding: 25px 0;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.footer-bottom__copyright {
+  display: block;
+  padding: 23px 0;
+  text-align: center;
+}
+
+.footer-bottom__copyright a {
+  @include clear-arrow;
+  color: #000000;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.footer-bottom__social a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.footer-bottom__social svg {
+  width: 22px;
+  height: 29px;
+}
+
+.footer-bottom__social a:hover svg {
+  fill: $dark-green-hover;
+}
+
+.footer-bottom__social a:active svg {
+  fill: $dark-green-hover;
+  opacity: 0.3;
+}
+
+.footer-bottom__social a:last-child {
+  margin-right: 0;
+}
+
+.footer-bottom__copyright-logo svg {
+  display: inline-block;
+  fill: $light-green;
+  width: 27px;
+  height: 34px;
+  margin-left: 29px;
+  vertical-align: middle;
+}
+
+.footer-bottom__copyright:hover svg {
+  fill: $dark-green-hover;
+}
+
+.footer-bottom__copyright:active {
+  opacity: 0.3;
+}
+
+.footer-bottom__copyright a:visited {
+  color: #000000;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+@media #{$tablet-width} {
+
+  .footer-bottom {
+  }
+
+  .footer-bottom__flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 53px 0;
+  }
+
+  .footer-bottom__logo {
+    display: block;
+    width: 105px;
+    height: 34px;
+    flex-basis: 190px;
+    text-align: left;
+  }
+
+  .footer-bottom__logo svg {
+    width: 105px;
+    height: 34px;
+  }
+
+  .footer-bottom__logo:hover svg {
+    fill: $dark-green-hover;
+  }
+
+  .footer-bottom__logo:active svg {
+    fill: $dark-green-hover;
+    opacity: 0.3;
+  }
+
+  .footer-bottom__social {
+    flex-basis: 167px;
+    border: none;
+    padding: 0;
+  }
+
+  .footer-bottom__copyright {
+    flex-basis: 190px;
+    min-width: 190px;
+    margin-right: 0;
+    padding: 0;
+    text-align: right;
+  }
+
+  .footer-bottom__copyright svg {
+    margin-right: 0;
+    padding: 0;
+  }
+
+}
+
+@media #{$desktop-width} {
+
+}

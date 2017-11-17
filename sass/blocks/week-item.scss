@@ -1,0 +1,147 @@
+.week-item {
+
+}
+
+.week-item__title {
+  font-size: 25px;
+  line-height: 30px;
+  vertical-align: bottom;
+  margin: 5px auto;
+}
+
+.week-item__advant {
+  color: $light-green;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  vertical-align: top;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.week-item__desc,
+.week-item__table {
+  color: $dark-gray;
+}
+
+.week-item__desc {
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+.week-item__table {
+  border-collapse: collapse;
+  line-height: 20px;
+  margin-bottom: 28px;
+}
+
+.week-item__table-row {
+  border-bottom: 1px solid $shadow;
+}
+
+.week-item__table-cell {
+  padding: 9px 29px 10px 0;
+}
+
+.week-item__price {
+  font-weight: bold;
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  color: $dark-gray;
+  margin: 18px auto 26px auto;
+}
+
+@media #{$tablet-width} {
+
+  .week-item {
+    @include clearfix;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .week-item__title {
+    font-size: 43px;
+    line-height: 50px;
+    float: left;
+    margin-bottom: 50px;
+  }
+
+  .week-item__advant {
+    line-height: 17px;
+    width: 130px;
+    padding: 20px 10px;
+    text-align: center;
+    float: right;
+    @include clearfix;
+  }
+
+  .week-item__desc {
+    width: 300px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .week-item__table {
+    width: 292px;
+    margin-top: 35px;
+    margin-bottom: 55px;
+  }
+
+  .week-item__pic {
+    position: absolute;
+    top: 115px;
+    right: 0;
+  }
+
+  .week-item__pic img {
+    width: 334px;
+  }
+
+  .week-item__price {
+    width: 292px;
+    margin: 35px 0;
+    font-size: 20px;
+  }
+
+  .week-item__btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+
+@media #{$desktop-width} {
+
+  .week-item {
+    padding-left: 175px;
+    box-sizing: border-box;
+  }
+
+  .week-item__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 52px;
+  }
+
+  .week-item__advant {
+    position: absolute;
+    left: 0;
+    top: 46px;
+  }
+
+  .week-item__table {
+    margin-top: 50px;
+    margin-bottom: 108px;
+  }
+
+  .week-item__pic {
+    top: 0;
+    z-index: -1;
+  }
+
+  .week-item__pic img {
+    width: 525px;
+  }
+
+}
